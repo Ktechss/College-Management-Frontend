@@ -1,0 +1,96 @@
+/* Basic styles for the side navigation */
+.admin-sidenav {
+    width: 240px;
+    height: 100vh;
+    background-color: #f8fafc;
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Inter', sans-serif;
+}
+
+.admin-sidenav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.admin-sidenav ul li {
+    margin-bottom: 15px;
+}
+
+.admin-sidenav ul li button,
+.admin-sidenav ul li a {
+    text-decoration: none;
+    display: block;
+    color: #333;
+    font-size: 16px;
+    padding: 12px 15px;
+    border-radius: 8px;
+    background-color: transparent;
+    border: none;
+    text-align: left;
+    width: 100%;
+    font-weight: 500;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect on links and buttons */
+.admin-sidenav ul li a:hover,
+.admin-sidenav ul li button:hover {
+    background-color: #dbeafe;
+    color: #1d4ed8;
+}
+
+.admin-sidenav ul li a.active {
+    background-color: #1d4ed8;
+    color: #fff;
+}
+
+.admin-sidenav ul li ul {
+    padding-left: 15px;
+    margin-top: 10px;
+}
+
+.admin-sidenav ul li ul li a {
+    padding: 10px 15px;
+    font-size: 14px;
+    background-color: #e2e8f0;
+    color: #333;
+    border-radius: 6px;
+}
+
+.admin-sidenav ul li ul li a:hover {
+    background-color: #cbd5e1;
+    color: #1d4ed8;
+}
+
+/* Style for menu toggle buttons */
+.admin-sidenav ul li button {
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.admin-sidenav ul li button:focus {
+    outline: none;
+}
+
+/* Responsive adjustments for the side navigation */
+@media (max-width: 768px) {
+    .admin-sidenav {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .admin-sidenav ul li {
+        margin-bottom: 10px;
+    }
+}
+
+/* For a more modern look, add subtle shadow and rounded corners */
+.admin-sidenav {
+    border-radius: 12px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.05);
+}

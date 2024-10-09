@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+}
+.Login_div
+{
+    height: 100vh;
+    width: 50vw;
+}
+.login_logo{
+    background: url('./assets/images/book.jpg');
+    width: 5vw;
+    height: 8vh;
+    align-self: flex-start;
+    margin-left: 5rem;
+    background-position: center;
+    background-size: 170%;
+    background-repeat: no-repeat;
+    
+}
+#credntials{
+    background:rgb(255, 255, 255);
+}
+#image{
+     background: url('./assets/images/LoginImg.jpg');
+     background-position:20%;
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+.main{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+}
+.Login_Credential_div
+{
+    background-color: transparent;
+    margin: 0 auto;
+    width: 75%;
+    height: 60%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+}
+.Login_Credential_div p,.Login_Credential_div h2,.checkbox_container{
+    text-align: left;
+    width: 100%;
+    max-width: 68%;
+    margin: 0;
+    padding: 0 0 5px;
+    margin-top: 1vh;
+    font-family: monospace;
+}
+.checkbox_container{
+    margin-top: 2vh;
+}
+.Login_Credential
+{
+    width: 25vw;
+    height: 4vh;
+    border: 3;
+    margin: 0 auto;
+    font-family:monospace;
+}
+.Login_Credential:focus {
+    outline: none; 
+}
+
+.Login_Credential::selection {
+    border-color: black;
+}
+#Login_button{
+    background: rgba(6, 147, 255, 0.912);
+    border: 0;
+    border-radius: 0.2rem;
+    height: 5vh;
+    width: 50%;
+    margin-top: 2vh;
+    color: white;
+}
+h2{
+    font-size: 1.5rem;
+}

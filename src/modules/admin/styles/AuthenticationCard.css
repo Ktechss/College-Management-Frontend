@@ -1,0 +1,86 @@
+/* Overlay to cover the screen */
+.auth-card-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure it's on top */
+}
+
+/* Card styling */
+.auth-card {
+    background-color: white;
+    padding: 3vh 2vw;
+    border-radius: 1vw;
+    box-shadow: 0 0.5vw 1vw rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 30vw; /* Adjusts according to the viewport width */
+    max-width: 90vw; /* For smaller screens, it won’t exceed 90% of the viewport width */
+    min-width: 300px; /* Ensures the card doesn't get too small on very small screens */
+}
+
+/* Heading */
+.auth-card h3 {
+    margin-bottom: 2vh;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+/* Input field styling */
+.auth-input {
+    width: 90%;
+    padding: 1.5vh;
+    margin-bottom: 2vh;
+    margin-top: 1vh;
+    border: 1px solid #ccc;
+    border-radius: 0.5vw;
+    font-size: 1rem;
+}
+
+/* Error message */
+.auth-error {
+    color: red;
+    font-size: 1rem;
+    margin-bottom: 2vh;
+}
+
+/* Action buttons container */
+.auth-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1vh;
+    gap: 2vw;
+}
+
+/* Button styling */
+.auth-btn {
+    padding: 1.2vh 2vw;
+    border: none;
+    border-radius: 0.5vw;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.auth-confirm {
+    background-color: #d9534f;
+    color: white;
+}
+
+.auth-confirm:hover {
+    background-color: #c9302c;
+}
+
+.auth-cancel {
+    background-color: #ccc;
+    color: black;
+}
+
+.auth-cancel:hover {
+    background-color: #999;
+}

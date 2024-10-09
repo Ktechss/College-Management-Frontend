@@ -1,0 +1,40 @@
+/* For the entire layout */
+.admin-layout {
+    margin: 0;
+    display: flex; /* This makes the layout behave as a flexible box, so the sidebar and content are side by side */
+    min-height: 100vh; /* Full height of the viewport */
+}
+
+/* Side navigation bar */
+.admin-sidenav {
+    width: 10%; /* Fixed width for the sidebar */
+    height: 100%; /* Full height of the screen */
+    background-color: #f8fafc; /* Light background color */
+    position: fixed; /* Keep it fixed on the screen */
+    top: 0;
+    left: 0;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1); /* Slight shadow to give depth */
+    z-index: 1000;
+}
+
+/* Main content area */
+.admin-content {
+    flex-grow: 1; /* Ensures the content area takes the remaining space */
+    margin-left: 10%; /* Matches the width of the sidebar */
+    width: 90%;
+    padding: 0px; /* Adds some space around the content */
+    background-color: #ffffff; /* Background color for the content area */
+}
+
+/* Responsive handling for smaller screens */
+@media (max-width: 768px) {
+    .admin-sidenav {
+        width: 100%; /* On smaller screens, the sidebar should take full width */
+        height: auto; /* Adjust the height */
+        position: relative; /* Make it scroll with the content */
+    }
+
+    .admin-content {
+        margin-left: 0; /* Remove the left margin on smaller screens */
+    }
+}
